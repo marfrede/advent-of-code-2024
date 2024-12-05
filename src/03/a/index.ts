@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const lines = readLines("../03/input.txt");
+const lines = readLines("../input.txt");
 const line = lines.join("");
 
 const matcher = /mul(\(((\d{1,3}),(\d{1,3})\)))/g;

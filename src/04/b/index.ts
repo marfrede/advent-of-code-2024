@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const matrix = readLines("../04b/input.txt");
+const matrix = readLines("../input.txt");
 
 const get = (x: number, y: number): string | undefined => {
   if (x < 0 || x >= matrix.length) {

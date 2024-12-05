@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const lines = readLines("../01b/input.txt");
+const lines = readLines("../input.txt");
 
 const leftNumbers: number[] = [];
 const rightNumbers: number[] = [];
@@ -11,10 +11,13 @@ lines.forEach((line) => {
   rightNumbers.push(Number(numberPair[1]));
 });
 
+leftNumbers.sort();
+rightNumbers.sort();
+
 let sum = 0;
 leftNumbers.forEach((leftN, i) => {
-  const numberOfEqualsInRightList = rightNumbers.filter(rN => rN === leftN).length
-  sum += numberOfEqualsInRightList * leftN;
+  const rightN = rightNumbers[i];
+  sum += Math.abs(rightN - leftN);
 });
 
 console.log("sum", sum);

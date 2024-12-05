@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const matrix = readLines("../04/input.txt");
+const matrix = readLines("../input.txt");
 
 const allowedWords = ["XMAS", "SAMX"];
 

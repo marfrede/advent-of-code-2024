@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const lines = readLines("../02/input.txt");
+const lines = readLines("../input.txt");
 
 let numberOfSafeRecords = 0;
 

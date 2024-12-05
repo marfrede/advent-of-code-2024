@@ -1,6 +1,6 @@
-import { read, readLines } from "../util/txt-reader";
+import { read, readLines } from "../../util/txt-reader";
 
-const lines = readLines("../05b/input.txt");
+const lines = readLines("../input.txt");
 
 interface Rule {
   first: number;
